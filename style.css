@@ -36,27 +36,24 @@
 
 .wrapper-video {
     height: 566px;
-    /*background-color: darkgray;*/
-
+    
 }
 
 .header {
     display: flex;
-
     margin-left: 0px;
     justify-content: space-between;
 }
 
 .logo {
-   
-   
     display: flex;
-    /*text-align: center;*/
-    /* box-shadow: 1px 1.732px 0px rgba(0,0,0,0.42); */
-   
     margin-top: 27px;
     margin-left: 0px;
-    
+}
+
+.logo_img {
+    background-image: url('assets/images/logo.svg');
+    width: 83px;
 }
 
 
@@ -68,7 +65,7 @@
     font-style: italic;
     text-transform: uppercase;
     display: block;
-    padding: 27px 0 0 2px;
+    padding: 27px 0 0 4px;
     
 }
 .navbar {
@@ -81,9 +78,7 @@
 
 .navbar ul{
     display: flex;
-    /*justify-content: space-between;*/
     text-align: center;
-    /*height: 40px;*/
 }
 
 .navbar ul li a{
@@ -95,7 +90,7 @@
     text-transform: uppercase;
     text-decoration: none;
     display: block;
-
+    margin-bottom: 2px;
 }
 
 .navbar-list>li>a:before {
@@ -146,37 +141,6 @@
     padding-top: 10px;
 }
 
-/*.about {
-    
-    
-    padding-left: 0px;
-    padding-top: 0px;
-    padding-right: 0px;
-  
-    
-    
-}
-
-.service {
-    
-    padding-left: 1px;
-    padding-top: 1px;
-    padding-right: 2px;
-    text-align: left;
-  
-   
-    
-}
-
-.contact {
-    
-   
-    padding-left: 1px;
-    padding-top: 3px;
-  
-}*/
-
-
 
 .navbar ul li a:hover{
     color: #FFF;
@@ -194,6 +158,10 @@
 .player {
      margin-left: 10px;
      margin-top: 56px;
+}
+
+.player-mobile {
+    display: none;
 }
 
 .cool {
@@ -270,9 +238,33 @@ content: '';
 }
 
 .download-icon {
-    padding: 60px 0 0 112px;
-    
+  
+    background-image: url(assets/images/shape1.svg);
+    background-repeat: no-repeat;
+    padding-top: 80px;
+    padding-left: 12px;
+    margin-top: 60px;
+    margin-left: 112px;
 }
+
+.leaf-icon {
+    padding-top: 110px;
+    padding-left: 135px;
+    margin-top: 36px;
+    margin-left: 135px;
+    background-image: url(assets/images/shape2.svg);
+    background-repeat: no-repeat;
+}
+
+.paperplane-icon {
+    padding-top: 87px;
+    padding-left: 119px;
+    margin-top: 53px;
+    margin-left: 119px;
+    background-image: url(assets/images/shape3.svg);
+    background-repeat: no-repeat;
+}
+
 
 .design {
     font-size: 27px;
@@ -283,7 +275,7 @@ font-weight: 300;
 text-align: center;
 text-transform: uppercase;
 margin-left: 17px;
-padding-top: 11px;
+padding-top: 9px;
 }
 
 .customise {
@@ -295,7 +287,7 @@ font-weight: 300;
 text-align: center;
 text-transform: uppercase;
 margin-left: 20px;
-padding-top: 14px;
+padding-top: 4px;
 }
 
 .free {
@@ -310,15 +302,6 @@ padding-left: 114px;
 padding-top: 10px;
 }
 
-
-
-.leaf-icon {
-    padding: 36px 0 0 135px;
-}
-
-.paperplane-icon {
-    padding: 53px 0 0 119px;
-}
 
 .scroll-section {
    
@@ -393,7 +376,9 @@ margin-bottom: 35px;
     height: 233px;
 }
 
-
+.monkey-mobile {
+    display:none;
+}
 
 .twitter {
   width: 247px;
@@ -402,6 +387,10 @@ margin-bottom: 35px;
   padding-top: 58px;
   position: relative;
   height: 175px;
+}
+
+.twitter-img-mobile{
+    display: none;
 }
 
 .plus-right {
@@ -623,6 +612,9 @@ footer {
     padding-bottom: 3px;
 }
 
+.logo-footer-mobile {
+    display: none;
+}
 
 .logo-footer span {
     font-size: 29px;
@@ -638,5 +630,374 @@ padding: 14px 0 0 4px;
 
 
 @media (max-width: 640px) {
-    #sidebar {display: none;}
+  .slider-right, .slider-left, .cool, .scroll-header, .date, .lorem-text, #scroll-bar, .plus-right, .twitter-count {display: none;}
+  
+  .wrapper { 
+    padding-left: 0px;
+    width: 640px;
+}
+
+.wrapper1 {
+    padding-left: 0px;
+    width: 640px;
+}
+
+
+.header {
+    display: flex;
+    margin-left: 0px;
+    justify-content: flex-start;
+}
+
+.logo {
+    display: flex;
+    margin-top: 10px;
+    margin-left: 11px;
+    padding-right: 23px;
+
+} 
+.logo_img {
+    background-image: url('assets/images/logo_mobile.svg');
+    width: 41px;
+    height: 41px;
+}
+
+
+.logo span {
+    font-size: 19px;
+    letter-spacing: 0.4px;
+    color:white;
+    font-family: "Lucida Sans";
+    font-style: italic;
+    text-transform: uppercase;
+    display: block;
+    padding: 14px 0 0 5px;
+    
+}
+
+
+
+.wrapper-video {
+    height: 389px;
+    
+}
+
+
+.navbar {
+    
+    margin: 0 0 0 0;
+    /*height: 41px;*/
+    background-color: rgb(245, 197, 6);
+    box-shadow: none;
+ 
+}
+
+.navbar ul li a{
+    font-size: 19px;
+    letter-spacing: 0px;
+    color: #9b7d08;
+    text-align: left;
+    font-family: 'Segoe WP';
+    text-transform: uppercase;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 13px;
+}
+
+
+.navbar-list>li>a.about:before { 
+    background-image: url('assets/images/about_mobile.svg'); 
+    margin-right: 7px;
+}
+
+.navbar-list>li>a.service:before { 
+    background-image: url('assets/images/service_mobile.svg'); 
+    margin-right: 1px;
+}
+
+.navbar-list>li>a.contact:before { 
+    background-image: url('assets/images/contact_mobile.svg'); 
+    margin-right: 11px;
+}
+
+
+
+.navbar ul li:first-child {
+    width: 149px;
+    border-right: 1px #9b7d08 solid;
+    padding-left: 22px;
+    padding-top: 19px;
+}
+
+.navbar ul li:nth-child(2) {
+    width: 125px;
+    border-right: 1px #9b7d08 solid;
+    padding-left: 7px;
+    padding-top: 20px;
+}
+
+
+.navbar ul li:nth-child(3) {
+    width: 128px;
+    padding-left: 11px;
+    padding-top: 19px;
+}
+
+
+.player {
+  display: none;
+}
+
+.player-mobile {
+    display: block;
+}
+
+
+.icons-section:before {
+    display: none;
+    }
+    
+    .icons-section:after {
+        display: none;
+    }
+    
+    
+    .icons-content {
+      display: flex;
+      height: 170px;
+    
+    }
+   
+
+
+    .download-icon {
+  
+        background-image: url(assets/images/shape1_mobile.svg);
+        background-repeat: no-repeat;
+        padding-top: 83px;
+        padding-left: 12px;
+        margin-top: 32px;
+        margin-left: 44px;
+    }
+    
+    .leaf-icon {
+        padding-top: 73px;
+        padding-left: 135px;
+        margin-top: 28px;
+        margin-left: 82px;
+        background-image: url(assets/images/shape2_mobile.svg);
+        background-repeat: no-repeat;
+    }
+    
+    .paperplane-icon {
+        padding-top: 70px;
+        padding-left: 119px;
+        margin-top: 28px;
+        margin-left: 69px;
+        background-image: url(assets/images/shape3_mobile.svg);
+        background-repeat: no-repeat;
+    }
+    
+
+    .design {
+        font-size: 23px;
+    letter-spacing: 0.3px;
+    color: #000000;
+    font-family: "Segoe UI";
+    font-weight: 300;
+    text-align: left;
+    text-transform: uppercase;
+    margin-left: 16px;
+    padding-top: 0px;
+    
+    }
+    
+    .customise {
+        font-size: 23px;
+    letter-spacing: 0.3px;
+    color: #000000;
+    font-family: "Segoe UI";
+    font-weight: 300;
+    text-align: center;
+    text-transform: uppercase;
+    margin-left: 20px;
+    padding-top: 14px;
+    }
+    
+    .free {
+        font-size: 23px;
+    letter-spacing: 0.3px;
+    color: #000000;
+    font-family: "Segoe UI";
+    font-weight: 300;
+    text-align: left;
+    text-transform: uppercase;
+    padding-left: 68px;
+    padding-top: 18px;
+    }
+    
+    .scroll-section {
+   
+        /*height: 506px;
+        width: 100%;
+        /*background-color: #f5c506;*/
+        background-image: none;
+     
+        
+    }
+
+    .scroll-content {
+        height: 485px;
+    }
+    .scroll-text {
+        width: 299px;
+        background-color: rgb(236, 158, 3 );
+        position: relative;
+        height: 232px;
+        margin-top: 11px;
+        margin-left: 9px;
+
+    }
+    .scroll-text p {
+        font-size: 29px;
+        letter-spacing: 0.4px;
+        line-height: 33px;
+        color: #ffffff;
+        font-family: "Segoe WP";
+        font-weight: 300;
+        padding-left: 30px;
+        padding-top: 16px;
+      }
+
+
+      .plus-left {
+        position: absolute;
+        bottom:18px;
+        right: 12px;
+        z-index: 10;
+    }
+    
+    .plus-left:hover {
+        transform: scale(1.5);
+        
+    }
+
+.monkey {
+    display: none;
+}
+.monkey-mobile {
+    display: block;
+    width: 315px;
+    height: 232px;
+    margin-top: 10px;
+    margin-left: 9px;
+
+}
+
+
+.twitter {
+    width: 640px;
+    background-color: rgb(221, 177, 1 );
+    padding-left: 82px;
+    padding-top: 58px;
+    position: relative;
+    height: 175px;
+    margin-top: 9px;
   }
+
+  .twitter-img {
+      display:none;
+  }
+
+  .twitter-img-mobile{
+    display: block;
+    background-image: url(assets/images/twitter_mobile.svg);
+    background-repeat: no-repeat;
+    height: 135px;
+    margin-left: 3px;
+}
+
+.lorem-section {
+    background-image: url(assets/images/base4_mobile.png);
+    background-repeat: no-repeat; 
+
+}
+
+
+  .lorem-content {
+   
+    height: 466px;
+  
+} 
+
+
+
+  .lorem-content .lorem-header {
+    font-size: 39px;
+    letter-spacing: 0.4px;
+    color: #f5c506;
+    font-family: "Open Sans";
+    font-weight: 400;
+    text-transform: uppercase;
+    padding-top: 37px;
+    padding-left: 18px;
+    margin-bottom: 35px;
+  
+}
+
+
+.lorem-pictures {
+    display: flex;
+    padding-left: 57px;
+    padding-top: 45px;
+    position: relative;
+}
+
+.circle {
+    position: absolute;
+    background-color: #f5c506;
+    width: 116px;
+    height: 116px;
+    border-radius: 58px;
+    left: 27px;
+    top: 4px;
+    font-size: 19px;
+  letter-spacing: 0px;
+  color: #ffffff;
+  font-family: "PT Sans Narrow";
+  font-weight: 700;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+
+}
+
+.logo-footer {
+    display: none;
+} 
+
+.logo-footer-mobile {
+    display: flex;
+    margin: 5px 0 0 64px;
+    padding-bottom: 5px;
+}
+
+
+.logo-footer-mobile span {
+    font-size: 17px;
+padding: 9px 0 0 0px;
+margin-left: 8px;
+
+letter-spacing: 0px;
+color: #ffffff;
+font-family: "Lucida Sans";
+font-style: italic;
+text-transform: uppercase;
+display: block;
+
+
+
+
+}
+
+}

@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>theyalow</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
-<!--  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,900&display=swap" rel="stylesheet"> -->   
     <link rel="stylesheet" href="style.css">
     <style>
         @font-face {
@@ -73,7 +72,7 @@
     <div class="wrapper">
         <div class="wrapper-video">
           <header class="header">
-            <h1 class="logo"><img src="assets/images/logo.svg"><span>TheYalow</span></h1>
+            <h1 class="logo"><div class="logo_img"></div><span>TheYalow</span></h1>
             <nav class="navbar">
             <ul class="navbar-list">
                 <li>
@@ -94,7 +93,11 @@
           <section class="video">
             <div class="player">
               <video poster="./assets/images/video.png" controls>
-              </video>  
+              </video> 
+            </div>
+            <div class="player-mobile">
+                    <video poster="./assets/images/video_mobile.png" controls>
+                    </video> 
             </div>
             <div class="cool">
               <p class="cool-text">The Cool</p> <p class="minimal">The Minimal</p>
@@ -109,9 +112,9 @@
         
         <section class="icons-section">
           <div class="icons-content wrapper"> 
-            <div class="column"><img src="assets/images/shape1.svg" class="download-icon"><div class="design">Better Design</div></div>
-            <div class="column"><img src="assets/images/shape2.svg" class="leaf-icon"><div class="customise">Customise</div></div>
-            <div class="column"><img src="assets/images/shape3.svg" class="paperplane-icon"><div class="free">its free</div></div>
+            <div class="column"><div class="download-icon"></div><div class="design">Better Design</div></div>
+            <div class="column"><div class="leaf-icon"></div><div class="customise">Customise</div></div>
+            <div class="column"><div class="paperplane-icon"></div><div class="free">its free</div></div>
           </div>   
         </section>
         
@@ -130,12 +133,16 @@
                       <div class="monkey">
                             <video poster="./assets/images/monkey.png" controls>
                             </video>  
-                          <!--<img src="assets/images/monkey.png" width="315" height="232">-->
+                      </div>
+                      <div class="monkey-mobile">
+                            <video poster="./assets/images/monkey_mobile.png" controls>
+                            </video>  
                       </div>
                       <div class="twitter">
                           <img src="assets/images/plus.png" class="plus-right">
                           <p class="twitter-count">22</p>
-                          <img src="assets/images/twitter.svg">
+                          <img src="assets/images/twitter.svg" class="twitter-img">
+                          <div class="twitter-img-mobile"></div>
                       </div>
                       <div class="date">
                           <p id="date">25</p>
@@ -181,6 +188,7 @@
     <footer>
       <div class="wrapper1">   
             <div class="logo-footer"><img src="assets/images/logo_footer.svg"><span>TheYalow</span></div>
+            <div class="logo-footer-mobile"><img src="assets/images/logo_footer_mobile.svg"><span>TheYalow</span></div>
       </div>
     </footer>
     
