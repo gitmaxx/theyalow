@@ -1,5 +1,4 @@
 
-
 .top-section {
     
     background-image: url(assets/images/base1.png);
@@ -684,7 +683,7 @@ padding: 14px 0 0 4px;
 
 
 .navbar {
-    
+    width: 454px;
     margin: 0 0 0 0;
     /*height: 41px;*/
     background-color: rgb(245, 197, 6);
@@ -752,6 +751,13 @@ padding: 14px 0 0 4px;
     display: block;
 }
 
+.icons-section {
+   
+    background-image: url(assets/images/base2_mobile.png);
+    background-repeat: no-repeat;
+    position: relative; 
+    
+}
 
 .icons-section:before {
     display: none;
@@ -971,6 +977,20 @@ padding: 14px 0 0 4px;
   align-items: center;
 
 }
+
+
+
+
+footer {
+    display: flex;
+    background-image: url(assets/images/base5_mobile.png);
+    background-repeat: no-repeat; 
+    box-shadow: 0px -3px 5px -3px rgba(0,0,0,0.75);
+    z-index: 7;
+    width: 640px;
+}
+
+
 
 .logo-footer {
     display: none;
